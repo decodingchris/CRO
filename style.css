@@ -15,8 +15,14 @@ body {
   margin-bottom: 10px;
 }
 
+.logo-mobile {
+  padding: 20px;
+  text-align: center;
+}
+
 .cta-title {
   margin-top: 0;
+  text-align: center;
 }
 
 .cta-button {
@@ -42,11 +48,11 @@ body {
   background-color: #f6f6f6;
 }
 
-.sidebar > .cta-section:first-of-type {
-  padding: 30px;
+.logo {
+  padding: 50px 30px 15px 30px;
 }
 
-.sidebar > .cta-section:not(:first-of-type) {
+.cta-section {
   padding: 0 30px 30px 30px;
 }
 
@@ -87,6 +93,9 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+  .logo-mobile {
+    display: none;
+  }
   .cta-mobile {
     display: none;
   }
