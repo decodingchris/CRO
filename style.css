@@ -15,7 +15,7 @@ body {
   margin-bottom: 10px;
 }
 
-.logo-mobile {
+.logo {
   padding: 20px;
   text-align: center;
 }
@@ -48,7 +48,7 @@ body {
   background-color: #f6f6f6;
 }
 
-.logo {
+.logo-desktop {
   padding: 50px 30px 15px 30px;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  .logo-mobile {
+  .logo {
     display: none;
   }
   .cta-mobile {
@@ -122,7 +122,7 @@ body {
     margin-top: 0;
   }
   .main {
-    flex: 3;
+    flex: 4;
     padding: 30px;
   }
 }
