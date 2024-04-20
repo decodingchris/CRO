@@ -46,6 +46,8 @@ body {
   display: none;
   flex: 1;
   background-color: #f6f6f6;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .logo-desktop {
@@ -104,6 +106,10 @@ body {
   padding-bottom: 10px;
 }
 
+.copyright {
+  margin-top: 20px;
+}
+
 @media only screen and (min-width: 992px) {
   .logo {
     display: none;
@@ -123,6 +129,6 @@ body {
   }
   .main {
     flex: 4;
-    padding: 30px;
+    padding: 30px 150px 30px 75px;
   }
 }
