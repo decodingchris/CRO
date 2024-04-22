@@ -26,6 +26,7 @@ body {
 }
 
 .cta-button {
+  display: inline-block;
   background-color: #0d6efd;
   padding: 10px;
   border: 2px solid #0d6efd;
@@ -35,6 +36,9 @@ body {
   color: white;
   transition-duration: 0.4s;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .cta-button:hover {
