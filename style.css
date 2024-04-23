@@ -3,26 +3,25 @@ body {
   margin: 0px;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 80px;
 }
 
-.cta-mobile {
+.main {
+  max-width: 800px;
+}
+
+.sidebar {
+  max-width: 350px;
   background-color: #f6f6f6;
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 40px;
 }
 
-.logo {
-  padding: 20px;
-  text-align: center;
-}
-
-.cta-title {
-  margin-top: 0;
-  text-align: center;
+.cta-section {
+  margin-bottom: 40px;
 }
 
 .cta-button {
@@ -46,35 +45,19 @@ body {
   border: 2px solid #0056b3;
 }
 
-.sidebar {
-  display: none;
-  flex: 1;
-  background-color: #f6f6f6;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.logo-desktop {
-  padding: 50px 30px 15px 30px;
-}
-
-.cta-section {
-  padding: 0 30px 30px 30px;
-}
-
 .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: white;
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .grid-item {
-  border: 1px solid #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #e6e6e6;
 }
 
 .cta-image {
@@ -98,10 +81,6 @@ body {
   border-radius: 75%;
 }
 
-.section {
-  margin-bottom: 50px;
-}
-
 .toc-list {
   list-style-type: square;
 }
@@ -110,29 +89,50 @@ body {
   padding-bottom: 10px;
 }
 
-.copyright {
-  margin-top: 20px;
+.section {
+  margin-bottom: 50px;
 }
 
-@media only screen and (min-width: 992px) {
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: none;
+}
+
+.cta-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
   .logo {
-    display: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
   }
   .cta-mobile {
-    display: none;
+    display: block;
+    background-color: #f6f6f6;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
   }
-  .flex-container {
-    flex-direction: row;
-    margin: 0;
+  .container {
+    grid-template-columns: 1fr;
   }
   .sidebar {
-    display: block;
-  }
-  .title {
-    margin-top: 0;
+    display: none;
   }
   .main {
-    flex: 4;
-    padding: 30px 150px 30px 75px;
+    padding: 0 20px;
+  }
+  .section {
+    margin-top: 40px;
+  }
+  .hr-space {
+    margin-top: 30px;
   }
 }
